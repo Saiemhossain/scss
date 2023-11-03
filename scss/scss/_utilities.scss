@@ -1,0 +1,27 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+$primaryColor:#663399;
+$secondaryColor:#f7d794;
+$lightColor:#f5f6fa;
+$darkColor:#353b48;
+$textColor:#262626;
+$fontPramiry: 'Poppins', sans-serif;
+$fontSecoundary:'Playfair Display', serif;
+body{
+  color: #262626;
+  font-size: 15px;
+font-family: $fontPramiry;
+ font-weight: 1.5em;
+}
+h1,h2,h3,h4,h5{
+  font-family: $fontSecoundary;
+  margin: 0 0 15px;
+}
+p{
+  font-family: $fontPramiry;
+    margin: 0 0 15px;
+}

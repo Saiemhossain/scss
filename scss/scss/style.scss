@@ -1,0 +1,50 @@
+/*Utilities*/
+
+@import "utilities";
+
+/*Service*/
+
+@import "service";
+
+/*Mixin*/
+
+@import "mixin";
+
+/*Extended oparetor*/
+#cta3{
+  @extend #cta;
+  //background: darken($primaryColor, $amount: 10%);
+ // width: 10%+60%;
+ 
+}
+/*Function*/
+@function setTextColor($color){
+  @if(lightness($color) > 75){
+    @return #333;
+
+  }@else{
+     @return #fff;
+
+  }
+}
+@mixin setBackground($color) {
+  background: $color;
+  color: setTextColor($lightColor);
+
+}
+
+#cta4{
+  @extend #cta2;
+  @include setBackground($lightColor);
+   h2{
+    color:setTextColor($lightColor)
+  }
+}
+
+
+
+
+
+
+
+
